@@ -16,14 +16,14 @@ void cheat(vector<int> arr, int len)
     {
         if (distance(arr[i], arr[i + 1]) == 1)
         {
-            cout << "NO" << endl;
+            cout << "Kosuke" << endl;
             return;
         }
     }
     if (len == 2)
-        cout << "YES" << endl;
+        cout << "Sakurako" << endl;
     else
-        cout << "NO" << endl;
+        cout << "Kosuke" << endl;
 }
 
 int main()
