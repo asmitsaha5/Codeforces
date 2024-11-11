@@ -22,7 +22,7 @@ void solution()
         cin >> c[i];
     }
 
-    // cout << "Reached";
+    
     map<int, int> m;
 
     for (int i = 0; i < k; i++)
@@ -34,8 +34,6 @@ void solution()
     sort(vec.begin(), vec.end(), cmp);
 
     int sum = 0;
-    // cout << "brand cost" << endl;
-    // Print the sorted pairs
     for (auto &i : vec)
     {
         if (n > 0)
@@ -49,7 +47,7 @@ void solution()
 
 int main()
 {
-    // cout << " Output: ";
+   
     int t = 0;
     cin >> t;
 
