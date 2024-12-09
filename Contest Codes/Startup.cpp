@@ -22,7 +22,6 @@ void solution()
         cin >> c[i];
     }
 
-    
     map<int, int> m;
 
     for (int i = 0; i < k; i++)
@@ -47,7 +46,7 @@ void solution()
 
 int main()
 {
-   
+
     int t = 0;
     cin >> t;
 
