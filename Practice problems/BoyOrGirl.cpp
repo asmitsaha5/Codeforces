@@ -1,5 +1,4 @@
-#include <iostream>
-#include <set>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()
@@ -7,14 +6,14 @@ int main()
     string username;
     cin >> username;
 
-    set<char> distinct_characters;
+    set<char> dc;
 
     for (char c : username)
     {
-        distinct_characters.insert(c);
+        dc.insert(c);
     }
 
-    if (distinct_characters.size() % 2 == 0)
+    if (dc.size() % 2 == 0)
     {
         cout << "CHAT WITH HER!" << endl;
     }
