@@ -1,13 +1,30 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-char transform(char c)
+void solve()
 {
-    if (c == 'p')
-        return 'q';
-    if (c == 'q')
-        return 'p';
-    return 'w';
+    string s;
+    cin >> s;
+
+    int n = s.size();
+
+    for (int i = n - 1; i >= 0; i--)
+    {
+        if (s[i] == 'p')
+        {
+            cout << 'q';
+        }
+        else if (s[i] == 'q')
+        {
+            cout << 'p';
+        }
+        else
+        {
+            cout << 'w';
+        }
+    }
+
+    cout << endl;
 }
 
 int main()
@@ -17,18 +34,7 @@ int main()
 
     while (t--)
     {
-        string a;
-        cin >> a;
-
-        string b = a;
-        reverse(b.begin(), b.end());
-        for (char &c : b)
-        {
-            c = transform(c);
-        }
-
-        cout << b << endl;
+        solve();
     }
-
     return 0;
 }
