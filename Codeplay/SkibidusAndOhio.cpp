@@ -1,25 +1,39 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define fastio                        \
+    ios_base::sync_with_stdio(false); \
+    cin.tie(NULL);                    \
+    cout.tie(NULL);
 
-int minLength(string s) {
-    string result;
-    for (char c : s) {
-        if (!result.empty() && result.back() == c) {
-            result.pop_back();
-        } else {
-            result.push_back(c);
+void solve()
+{
+    string w;
+    cin >> w;
+
+    int l = w.length();
+    int flag = 0;
+    int ans = 0;
+
+    for (int i = l - 1; i >= 1; i--)
+    {
+        if (w[i] == w[i - 1])
+        {
+            cout << 1 << endl;
+            return;
         }
     }
-    return max(1, (int)result.length());
+    cout << l << endl;
 }
 
-int main() {
-    int t;
+int main()
+{
+    fastio;
+
+    int t = 1;
     cin >> t;
-    while (t--) {
-        string s;
-        cin >> s;
-        cout << minLength(s) << endl;
+    while (t--)
+    {
+        solve();
     }
     return 0;
 }
