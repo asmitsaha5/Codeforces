@@ -2,27 +2,12 @@
 using namespace std;
 void solve()
 {
-    int n, k, a[200005];
-
-    cin >> n >> k;
-    for (int i = 1; i <= n; i++)
-        cin >> a[i];
-    if (n == k)
+    int n, m, f, k;
+    cin >> n >> m >> f >> k;
+    int x;
+    for (int i = 0; i < n; i++)
     {
-        int flg = 0;
-        for (int i = 2; i <= n; i += 2)
-            if (a[i] == i / 2)
-                flg = i / 2;
-            else
-                break;
-        cout << ++flg << endl;
-    }
-    else
-    {
-        bool flg = true;
-        for (int i = 2; i <= n - k + 2; i++)
-            flg &= a[i] == 1;
-        cout << (flg ? 2 : 1) << endl;
+        
     }
 }
 int main()
